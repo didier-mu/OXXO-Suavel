@@ -1,0 +1,66 @@
+
+/// TEXTOS
+
+.homeSuavel{
+    font-family: var(--primariaRegular);
+    background: url(../img/luces.png) no-repeat center top / contain,
+                url(../img/BACK.png) no-repeat center top / cover;
+    min-height: 600px;
+    
+    h1,h2,h3,h4,h5,h6{
+        line-height: 1.3;
+        margin-bottom: 0;
+        text-transform: none;
+        font-weight: normal;
+        color: #fff;
+        
+        b{
+            font-family: var(--primariaBold);
+        }
+    }
+    
+}
+
+.combo {
+    @include combo;
+}
+ 
+.checkboxes{
+    @include checkbox;
+}
+
+.btn__input{
+    @include boton-on;
+}
+
+.form__input{
+    @include input;
+}
+
+.legales{
+    .typSuavel--caja{
+        align-items: flex-start;
+    }
+    
+    h1{
+        align-self: center;
+    }
+    
+    h4{
+        margin-bottom: 15px !important;
+        text-align: left !important;
+        
+        b{
+            display: block;
+        }
+    }
+    
+    ul{
+        list-style: none;
+        
+        li{
+            color: var(--blanco);
+            font-size: var(--h4);
+        }
+    }
+}

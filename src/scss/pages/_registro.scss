@@ -1,0 +1,141 @@
+.registroSuavel{
+   background-position: -280px top, center;
+   
+   &--hero{
+      padding: 60px 0 0;
+      
+      h3{
+         font-size: var(--h3);
+         text-align: center;
+      }
+      
+      &--arte{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         min-height: 940px;
+      }
+   }
+   
+   &--form{
+      position: relative;
+      padding: 140px 30px 50px;
+      margin-top: 100px;
+      box-shadow: 0px 0px 10px #FD3DA6;
+      border: 1px solid #FD3DA6;
+      border-radius: 40px;
+      background:rgba($color: #fff, $alpha: .3);
+      flex-direction: column;
+      flex-flow: wrap;
+      justify-content: space-between;
+      
+      img{
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: -120px;
+         margin: auto;
+         max-width: 250px;
+         width: 100%;
+         filter: drop-shadow(0px 0px 25px #FD3DA6);
+      }
+      
+      #inputEdad, #inputEstado{
+         flex:0 0 45%;
+      }
+      
+      .btn__input{
+         margin: auto;
+      }
+   }
+   
+   .col-lg-6{
+      & > h6{
+         font-size: var(--h6);
+         text-align: center;
+         margin: 30px auto;
+      }  
+   }
+}
+
+.typSuavel{
+   &--caja{
+      box-shadow: 0px 0px 10px #FD3DA6;
+      border: 1px solid #FD3DA6;
+      border-radius: 40px;
+      background:rgba($color: #fff, $alpha: .3);
+      padding: 50px;
+      flex-direction: column;
+      align-items: center;
+      
+      h1{
+         font-size: var(--h2);
+         margin-bottom: 20px;
+      }
+      
+      h4{
+         font-size: var(--h4);
+         margin-bottom: 30px;
+         text-align: center;
+      }
+      
+      h2{
+         font-size: var(--h1);
+         text-shadow: 0 3px 4px #fd3da6a2;
+      }
+   }
+}
+
+@media (max-width:992px) {
+   .registroSuavel{
+      background-position: -280px top, center;
+   
+      &--hero{
+         padding: 60px 0 0;
+         
+         h3{
+            margin: 30px auto;   
+            font-size: var(--h4);
+         }
+         
+         &--arte{
+            min-height: auto;
+         }
+         
+         #imgCarro{
+            margin-top: 20px;
+         }
+      }
+      
+      &--form{
+         margin-top: 20px;
+         padding:40px 15px;
+         border-radius: 20px;
+         
+         img{
+            display: none;
+         }
+         
+         #inputEdad, #inputEstado{
+            flex:0 0 100%;
+         }
+         
+         .btn__input{
+            margin: 20px auto 0;
+            width: 100%;
+         }
+         
+      }
+   }
+   
+   .typSuavel{
+      &--caja{
+         padding:40px 15px;
+         border-radius: 20px;
+         
+         h1{
+            font-size: var(--h3);
+         }
+      }
+   }
+}

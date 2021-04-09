@@ -1,0 +1,209 @@
+
+
+
+// MISC
+
+
+@mixin checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    input{
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+
+        &:checked ~ .checkmark {
+            background-color: #fff;
+        }
+
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+    
+    .label{
+        color: #fff;
+        
+        a{
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+    
+    .checkmark{
+        height: 26px;
+        width: 25px;
+        border-radius: 5px;
+        border:2px solid #fff;
+        margin-right: 10px;
+        position: relative;
+
+        &:after{
+            left: 7px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 8px;
+            height: 12px;
+            border: solid ;;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+    
+    .msjError{
+        display: block;
+        color: red;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    
+    @media (max-width:992px) {
+        .label{
+            //flex: 0 0 82%;
+            font-size: var(--h5);
+        }
+        
+        .msjError{
+            text-align: center;
+            font-size: var(--h6);
+         }
+      
+    }
+
+}
+
+@mixin combo {
+    
+    cursor: pointer;
+    background: url(../../img/flechaCombo.png) no-repeat 95% center / 10px #fff;
+    min-height: 50px;
+    border-radius: 60px;
+    padding: 0 30px;
+    display: flex;
+    
+    select{
+        appearance: none;
+        outline: none;
+        border: none;
+        font-size: var(--h4);
+        background: var(--blanco);
+        color: var(--negro);
+        transition: .3s ease-in-out all;
+        width: 100%;
+        cursor: pointer;
+        
+        &:focus{
+            outline: none;
+        }
+    }
+    
+}
+
+@mixin boton-on {
+    border: 1px solid var(--primario);
+    border-radius: 50px;
+    min-height: 60px;
+    display: flex;
+    padding: 3px;
+    
+    input[type=submit]{
+        appearance: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: var(--h4);
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 50px;
+        padding: 0 15px;
+        transition: .3s ease-in-out all;
+        background: var(--secundario);
+
+        &:disabled{
+            color: #ccc;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+        &:hover{
+            background: var(--primario);
+        }
+    }
+    
+    
+}
+
+@mixin input{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+
+    label{
+        font-size: var(--h4);
+        color: var(--blanco);
+        margin-bottom: 5px;
+        z-index: 0;
+        font-family: var(--primariaBold);
+        transition: .3s ease-in-out all;
+        
+        span{
+            font-size: var(--h5);
+            font-family: var(--primariaRegular);
+            margin-left: 10px;
+        }
+    }
+
+    input[type=text], input[type=date]{
+        appearance: none;
+        outline: none;
+        opacity: 1;
+        min-height: 50px;
+        font-size: var(--h4);
+        background: var(--blanco);
+        color: var(--negro);
+        border-radius: 60px;
+        border: none;
+        padding: 0 30px;
+        width: 100%;
+        transition: .3s ease-in-out all;
+        
+        &:focus{
+            border: 1px solid var(--secundario);
+        }
+    }
+    
+    .error-input{
+        display: block;
+        color: red;
+        flex: 0 0 100%;
+        font-size: var(--h6);
+        margin-top: 5px;
+    }
+    
+    @media (max-width:992px) {
+        margin-bottom: 15px;
+        
+        label{
+            font-size: var(--h5);
+        }
+    }
+}
+
+
