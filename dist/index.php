@@ -30,14 +30,19 @@
               <form class="homeSuavel--sesion--caja d-flex">
                 <h2> <b>Para participar regístrate aquí</b></h2>
                 <div id="cajaChecks" class="d-flex">
+                  <div id="cajaEdad" class="checkboxes">
+                    <input id="checkEdad" type="checkbox" class="checkbox">
+                    <label id="checkboxEdad" for="checkEdad" class="checkmark"> </label>
+                    <label id="labelEdads" for="checkEdad" class="label">Acepto que soy mayor de 18 años</label>
+                  </div>
                   <div id="cajaLegal" class="checkboxes">
                     <input id="checkLegale" type="checkbox" class="checkbox">
                     <label id="checkboxLegales" for="checkLegale" class="checkmark"> </label>
                     <label id="labelLegales" for="checkLegale" class="label">Acepto <a id="linkTerminos" href="terminos-y-condiciones.php">Términos y Condiciones.</a></label>
                   </div>
-                  <div class="botonera d-flex"><a id="linkFb" href="/registro.php"><img id="imgFb" src="../img/face.png" alt="Oxxo facebook" class="img-fluid"></a><a id="linkGoogle" href="/registro.php"><img id="imgGoogle" src="../img/google.png" alt="Oxxo google" class="img-fluid"></a></div>
-                  <h6>Tu información es 100% confidencial. No publicaremos nada en tu nombre</h6>
                 </div>
+                <div class="botonera d-flex"><a id="linkFb" href="/registro.php"><img id="imgFb" src="../img/face.png" alt="Oxxo facebook" class="img-fluid"></a><a id="linkGoogle" href="/registro.php"><img id="imgGoogle" src="../img/google.png" alt="Oxxo google" class="img-fluid"></a></div>
+                <h6>Tu información es 100% confidencial. No publicaremos nada en tu nombre</h6>
               </form>
             </div>
             <div class="col-12 homeSuavel--sesion--footer">

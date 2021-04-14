@@ -29,20 +29,19 @@
       
       #cajaChecks{
          flex-direction: column;
-         align-items: center;
+      }
+      
+      .botonera{
+         margin: 10px 0 20px;
          
-         .botonera{
-            margin: 10px 0 20px;
-            
-            img{
-               margin: 0 10px;
-            }
+         img{
+            margin: 0 10px;
          }
-         
-         h6{
-            font-size: var(--h6);
-            text-align: center;
-         }
+      }
+      
+      h6{
+         font-size: var(--h6);
+         text-align: center;
       }
       
       h2{
@@ -93,24 +92,21 @@
             border-radius: 20px;
          }
          
-         #cajaChecks {
-            .botonera{
-               flex-direction: column;
+         .botonera{
+            flex-direction: column;
+            
+            a{
+               img{
+                  margin: auto auto 20px;   
+               }
                
-               a{
+               &:last-child{
                   img{
-                     margin: auto auto 20px;   
+                     margin: auto;   
                   }
                   
-                  &:last-child{
-                     img{
-                        margin: auto;   
-                     }
-                     
-                  }
                }
             }
-            
          }
       }
      

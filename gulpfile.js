@@ -137,14 +137,14 @@ gulp.task('browser-sync', () => {
 
     php.server({ 
         base: './dist/',
-        port: 8010,
+        port: 8011,
         keepalive: true
     });
 
     browserSync.init({
         injectChanges: true,
         files: ['*.html', './dist/**/*.{html,php,css,js}'],
-        proxy: '127.0.0.1:8010',
+        proxy: 'localhost:8011',
     });
     
     gulp.watch('./src/pug/**/*.pug', gulp.parallel('pugphp'));

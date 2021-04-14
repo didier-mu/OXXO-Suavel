@@ -23,29 +23,12 @@
             <div class="col-lg-6">
               <form class="registroSuavel--form d-flex"><a href="/"> <img src="img/CONCURSO.png" alt="" class="img-fluid"></a>
                 <div class="form__input">
-                  <label for="">Nombre completo y apellidos</label>
-                  <input id="nombre" type="text" name="">
-                </div>
-                <div id="inputEdad" class="form__input">
-                  <label for="">Edad</label>
-                  <input id="edad" type="text" name="">
-                </div>
-                <div id="inputEstado" class="form__input">
-                  <label for="">Estado</label>
-                  <div class="combo">
-                    <select id="estado" name=""> 
-                      <option value="" disabled="" selected="selected" hidden="hidden">Selecciona</option>
-                      <option value="">CDMX</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__input">
-                  <label for="">Celular</label>
-                  <input id="celular" type="text" name="">
-                </div>
-                <div class="form__input">
                   <label for="">Número de ticket</label>
                   <input id="numeroTicket" type="text" name="">
+                </div>
+                <div class="form__input">
+                  <label for="">ID ticket</label>
+                  <input id="idTicket" type="text" name="">
                 </div>
                 <div class="form__input">
                   <label for="">¿Por qué amas Suavel?<span>(150 caracteres)</span></label>

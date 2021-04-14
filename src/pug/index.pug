@@ -34,6 +34,12 @@ html(lang='es')
                                     b Para participar regístrate aquí
                                 
                                 #cajaChecks.d-flex
+                                    .checkboxes#cajaEdad
+                                        input#checkEdad.checkbox(type='checkbox')
+                                        label#checkboxEdad.checkmark(for='checkEdad')  
+                                        label.label#labelEdads(for='checkEdad')
+                                            | Acepto que soy mayor de 18 años
+                                    
                                     .checkboxes#cajaLegal
                                         input#checkLegale.checkbox(type='checkbox')
                                         label#checkboxLegales.checkmark(for='checkLegale')  
@@ -41,14 +47,14 @@ html(lang='es')
                                             | Acepto 
                                             a#linkTerminos(href="terminos-y-condiciones.php") Términos y Condiciones.
                                     
-                                    .botonera.d-flex
-                                        a#linkFb(href="/registro.php")
-                                            img.img-fluid#imgFb(src="../img/face.png", alt="Oxxo facebook")
+                                .botonera.d-flex
+                                    a#linkFb(href="/registro.php")
+                                        img.img-fluid#imgFb(src="../img/face.png", alt="Oxxo facebook")
 
-                                        a#linkGoogle(href="/registro.php")
-                                            img.img-fluid#imgGoogle(src="../img/google.png", alt="Oxxo google")
-                                    
-                                    h6 Tu información es 100% confidencial. No publicaremos nada en tu nombre
+                                    a#linkGoogle(href="/registro.php")
+                                        img.img-fluid#imgGoogle(src="../img/google.png", alt="Oxxo google")
+                                
+                                h6 Tu información es 100% confidencial. No publicaremos nada en tu nombre
                                     
                         .col-12.homeSuavel--sesion--footer
                             h6 (1)Promoción válida del 22 de abril al 16 de junio del 2021.(2)Consulta términos y condiciones en www.oxxo.com/concursos/suavel. Imágenes sólo de uso ilustrativo. 

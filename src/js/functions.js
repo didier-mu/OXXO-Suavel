@@ -99,22 +99,20 @@ function validacionForm(){
       var nombre = $("#nombre"),
          edad = $("#edad"),
          estado = $("#estado");
-         celular = $("#celular");
+         id = $("#idTicket");
          numeroTicket = $("#numeroTicket");
          coments = $("#coments");
 
-      valText(nombre);
-      valNum(edad);
-      valCombos(estado);
-      valNum(celular);
+      
+      valTextNum(id);
       valTextNum(numeroTicket);
       valTextNum(coments);
 
       // VALIDATE ALL
 
       if ($('form .error-input').length == 0) {
-         // $("form").submit();
-         window.location.href="gracias-registro.php"
+        //  $("form").submit();
+        // window.location.href="gracias-registro.php"
       }
 
       return false;
@@ -128,21 +126,27 @@ function validacionForm(){
 function validacionSesion(){
       $('.botonera a').on("click", function (e) {
           // CHECKBOX
-         if($('#checkLegale').prop("checked") == false){
-               $('.msjError').remove();
-               $('#cajaLegal').append('<span class="msjError" > Debes aceptar los términos y condiciones. </span>');
-               e.preventDefault();
-            }
-            
-            else {
-               $('.msjError').remove();
-            }
-            
-            // VALIDATE ALL
+        if($('#checkEdad').prop("checked") == false){
+            $('.msjError').remove();
+            $('#cajaEdad').append('<span class="msjError" > Debes ser mayor de 18 años. </span>');
+            e.preventDefault();
+        }
+        
+        else if($('#checkLegale').prop("checked") == false){
+            $('.msjError').remove();
+            $('#cajaLegal').append('<span class="msjError" > Debes aceptar los términos y condiciones. </span>');
+            e.preventDefault();
+        }
+        
+        else {
+            $('.msjError').remove();
+        }
+        
+        // VALIDATE ALL
 
-            if ($('form .msjError').length == 0) {
-               // window.location.href = "/registro.php"
-            }
+        if ($('form .msjError').length == 0) {
+            // window.location.href = "/registro.php"
+        }
      });
      
      $(".checkmark").on("click", function () {
